@@ -1,0 +1,18 @@
+set routing-instances CMN_SWITCH_MGT-WINDSOR instance-type evpn
+set routing-instances CMN_SWITCH_MGT-WINDSOR protocols evpn mac-statistics
+set routing-instances CMN_SWITCH_MGT-WINDSOR protocols evpn interface ae6.1000
+set routing-instances CMN_SWITCH_MGT-WINDSOR protocols evpn interface ae7.1000
+set routing-instances CMN_SWITCH_MGT-WINDSOR protocols evpn interface ae8.1000
+set routing-instances CMN_SWITCH_MGT-WINDSOR protocols evpn interface ae9.1000
+set routing-instances CMN_SWITCH_MGT-WINDSOR protocols evpn encapsulation mpls
+set routing-instances CMN_SWITCH_MGT-WINDSOR protocols evpn default-gateway do-not-advertise
+set routing-instances CMN_SWITCH_MGT-WINDSOR protocols evpn label-allocation per-instance
+set routing-instances CMN_SWITCH_MGT-WINDSOR vlan-id none
+set routing-instances CMN_SWITCH_MGT-WINDSOR l3-interface irb.1000
+set routing-instances CMN_SWITCH_MGT-WINDSOR interface ae6.1000
+set routing-instances CMN_SWITCH_MGT-WINDSOR interface ae7.1000
+set routing-instances CMN_SWITCH_MGT-WINDSOR interface ae8.1000
+set routing-instances CMN_SWITCH_MGT-WINDSOR interface ae9.1000
+set routing-instnaces CMN_SWITCH_MGT-WINDSOR route-distinguisher 10.126.128.5:1000
+set routing-instances CMN_SWITCH_MGT-WINDSOR vrf-target target:65529:1000
+

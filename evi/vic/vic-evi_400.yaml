@@ -1,0 +1,22 @@
+---
+members:
+  - hostname: cc23-r-361
+    lo0: 10.126.128.4
+    id: 400 
+    name: 'SCALE_INTERSITE_L2VPN_200'
+    type: anycast
+    l3_interface: irb.1000
+    interfaces:
+      - name: ae6
+    mpls_vlan: none
+    access_vlan: 400 
+
+  - hostname: cc23-r-362
+    lo0: 10.126.128.5
+    id: 400 
+    name: 'SCALE_INTERSITE_L2VPN_200'
+    type: l2_only 
+    interfaces:
+      - name: ae6
+    mpls_vlan: none
+    access_vlan: 400 

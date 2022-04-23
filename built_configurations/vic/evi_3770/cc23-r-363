@@ -1,0 +1,14 @@
+set routing-instances UNIFIED_NG-CMN_EVI instance-type evpn
+set routing-instances UNIFIED_NG-CMN_EVI protocols evpn mac-statistics
+set routing-instances UNIFIED_NG-CMN_EVI protocols evpn interface ae6.3770
+set routing-instances UNIFIED_NG-CMN_EVI protocols evpn interface ae7.3770
+set routing-instances UNIFIED_NG-CMN_EVI protocols evpn encapsulation mpls
+set routing-instances UNIFIED_NG-CMN_EVI protocols evpn default-gateway do-not-advertise
+set routing-instances UNIFIED_NG-CMN_EVI protocols evpn label-allocation per-instance
+set routing-instances UNIFIED_NG-CMN_EVI vlan-id none
+set routing-instances UNIFIED_NG-CMN_EVI l3-interface irb.3770
+set routing-instances UNIFIED_NG-CMN_EVI interface ae6.3770
+set routing-instances UNIFIED_NG-CMN_EVI interface ae7.3770
+set routing-instnaces UNIFIED_NG-CMN_EVI route-distinguisher 10.126.144.4:3770
+set routing-instances UNIFIED_NG-CMN_EVI vrf-target target:65529:3770
+

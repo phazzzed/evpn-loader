@@ -1,0 +1,30 @@
+---
+  state : 
+   - name : wa
+     evpn_instances:
+      - id : 1000
+   - name : sa
+     evpn_instances:
+      - id : 1000
+   - name : tas
+     evpn_instances:
+      - id : 1000
+   - name : vic
+     evpn_instances:
+      - id : 400
+      - id : 1000
+      - id : 1001
+      - id : 3770
+   - name : act
+     evpn_instances:
+      - id : 1000
+   - name : nsw
+     evpn_instances:
+      - id : 1000
+   - name : qld
+     evpn_instances:
+      - id : 1000
+   - name : nt
+     evpn_instances:
+      - id : 1000
+

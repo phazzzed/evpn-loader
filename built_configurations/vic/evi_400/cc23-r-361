@@ -1,0 +1,12 @@
+set routing-instances SCALE_INTERSITE_L2VPN_200 instance-type evpn
+set routing-instances SCALE_INTERSITE_L2VPN_200 protocols evpn mac-statistics
+set routing-instances SCALE_INTERSITE_L2VPN_200 protocols evpn interface ae6.400
+set routing-instances SCALE_INTERSITE_L2VPN_200 protocols evpn encapsulation mpls
+set routing-instances SCALE_INTERSITE_L2VPN_200 protocols evpn default-gateway do-not-advertise
+set routing-instances SCALE_INTERSITE_L2VPN_200 protocols evpn label-allocation per-instance
+set routing-instances SCALE_INTERSITE_L2VPN_200 vlan-id none
+set routing-instances SCALE_INTERSITE_L2VPN_200 l3-interface irb.1000
+set routing-instances SCALE_INTERSITE_L2VPN_200 interface ae6.400
+set routing-instnaces SCALE_INTERSITE_L2VPN_200 route-distinguisher 10.126.128.4:400
+set routing-instances SCALE_INTERSITE_L2VPN_200 vrf-target target:65529:400
+

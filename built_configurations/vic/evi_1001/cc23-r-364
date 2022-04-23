@@ -1,0 +1,18 @@
+set routing-instances CMN_SWITCH_MGT-EXHIBITION instance-type evpn
+set routing-instances CMN_SWITCH_MGT-EXHIBITION protocols evpn mac-statistics
+set routing-instances CMN_SWITCH_MGT-EXHIBITION protocols evpn interface ae6.1000
+set routing-instances CMN_SWITCH_MGT-EXHIBITION protocols evpn interface ae7.1000
+set routing-instances CMN_SWITCH_MGT-EXHIBITION protocols evpn interface ae8.1000
+set routing-instances CMN_SWITCH_MGT-EXHIBITION protocols evpn interface ae9.1000
+set routing-instances CMN_SWITCH_MGT-EXHIBITION protocols evpn encapsulation mpls
+set routing-instances CMN_SWITCH_MGT-EXHIBITION protocols evpn default-gateway do-not-advertise
+set routing-instances CMN_SWITCH_MGT-EXHIBITION protocols evpn label-allocation per-instance
+set routing-instances CMN_SWITCH_MGT-EXHIBITION vlan-id none
+set routing-instances CMN_SWITCH_MGT-EXHIBITION l3-interface irb.1000
+set routing-instances CMN_SWITCH_MGT-EXHIBITION interface ae6.1000
+set routing-instances CMN_SWITCH_MGT-EXHIBITION interface ae7.1000
+set routing-instances CMN_SWITCH_MGT-EXHIBITION interface ae8.1000
+set routing-instances CMN_SWITCH_MGT-EXHIBITION interface ae9.1000
+set routing-instnaces CMN_SWITCH_MGT-EXHIBITION route-distinguisher 10.126.144.5:1001
+set routing-instances CMN_SWITCH_MGT-EXHIBITION vrf-target target:65529:1001
+

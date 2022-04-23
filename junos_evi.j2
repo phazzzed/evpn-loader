@@ -1,0 +1,23 @@
+routing-instances {
+EVPN_{{ evi_id }} {
+  instance-type evpn;
+  protocols {
+    evpn {
+      mac-statistics;
+      {% for mem in interface_members %}
+      interface {{ mem }};
+      {% endfor %}
+      encapsulation mpls;
+      default-gateway do-not-advertise;
+      label-allocation per-instance;
+    }
+  }
+  vlan-id {{ vlan }};
+  l3-interface {{ l3_interface }};
+  {% for mem in interface_members %}
+  interface {{ mem }};
+  {% endfor %}
+  route-distinguisher {{ loopback0 }}:{{ evi_id }};
+  vrf-target target:65529:{{ evi_id }};
+}
+}

@@ -1,8 +1,6 @@
 ---
 members:
   - hostname: cc23-r-361
-    lo0: 10.126.128.4
-    id: 1000 
     name: 'CMN_SWITCH_MGT-WINDSOR'
     type: anycast
     l3_interface: irb.1000
@@ -11,12 +9,8 @@ members:
       - name: ae7
       - name: ae8
       - name: ae9
-    mpls_vlan: none
-    access_vlan: 1000
 
   - hostname: cc23-r-362
-    lo0: 10.126.128.5
-    id: 1000
     name: 'CMN_SWITCH_MGT-WINDSOR'
     type: anycast
     l3_interface: irb.1000
@@ -25,5 +19,3 @@ members:
       - name: ae7
       - name: ae8
       - name: ae9
-    mpls_vlan: none
-    access_vlan: 1000 

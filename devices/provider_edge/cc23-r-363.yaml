@@ -1,0 +1,6 @@
+---
+hostname : cc23-r-363
+loopback0 : 10.126.144.4
+vendor : Juniper 
+role : "provider edge"
+

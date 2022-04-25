@@ -6,12 +6,12 @@ set routing-instances {{ name }} protocols evpn interface {{ vpn_interfaces.name
 set routing-instances {{ name }} protocols evpn encapsulation mpls
 set routing-instances {{ name }} protocols evpn default-gateway do-not-advertise
 set routing-instances {{ name }} protocols evpn label-allocation per-instance
-set routing-instances {{ name }} vlan-id {{ mpls_vlan }}
+set routing-instances {{ name }} vlan-id {{ evi_vlan }}
+{% if evi_type == 'anycast' %}
 set routing-instances {{ name }} l3-interface {{ l3_interface }}
+{% endif %}
 {% for vpn_interfaces in interfaces %}
 set routing-instances {{ name }} interface {{ vpn_interfaces.name }}.{{access_vlan}}
 {% endfor %}
-set routing-instnaces {{ name }} route-distinguisher {{ lo0 }}:{{ id }}
+set routing-instances {{ name }} route-distinguisher {{ lo0 }}:{{ id }}
 set routing-instances {{ name }} vrf-target target:65529:{{ id }}
-
-

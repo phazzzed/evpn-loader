@@ -3,28 +3,109 @@
    - name : wa
      evpn_instances:
       - id : 1000
+        name : CMN_SWITCH_MGT-WELLINGTON
+        evi_type : anycast
+        access_vlan : 1000
+        evi_vlan : none
+
+      - id : 1001
+        name : CMN_SWITCH_MGT-PIER
+        evi_type : anycast
+        access_vlan : 1000
+        evi_vlan : none
+
    - name : sa
      evpn_instances:
       - id : 1000
-   - name : tas
-     evpn_instances:
-      - id : 1000
+        name : CMN_SWITCH_MGT-FLINDERS
+        evi_type : anycast
+        access_vlan : 1000
+        evi_vlan : none
+
+      - id : 1001
+        name : CMN_SWITCH_MGT-WAYMOUTH
+        evi_type : anycast
+        access_vlan : 1000
+        evi_vlan : none
+ 
+      - id : 1002
+        name : CMN_SWITCH_MGT-CASUARINA
+        evi_type : anycast
+        access_vlan : 1000
+        evi_vlan : none
+
+
+      - id : 1003
+        name : CMN_SWITCH_MGT-DARWIN
+        evi_type : anycast
+        access_vlan : 1000
+        evi_vlan : none
+
    - name : vic
      evpn_instances:
       - id : 400
+        name : SCALE_INTERSITE_L2VPN_200
+        evi_type : l2_only 
+        access_vlan : 400
+        evi_vlan : none
+
       - id : 1000
+        name : CMN_SWITCH_MGT-WINDSOR
+        evi_type : anycast
+        access_vlan : 1000
+        evi_vlan : none
+
       - id : 1001
-      - id : 3770
-   - name : act
-     evpn_instances:
-      - id : 1000
+        name : CMN_SWITCH_MGT-EXHIBITION
+        evi_type : anycast
+        access_vlan: 1000
+        evi_vlan : none
+
+      - id : 1002
+        name : CMN_SWITCH_MGT-BATHURST
+        evi_type : anycast
+        access_vlan: 1000
+        evi_vlan : none
+
+      - id : 1003
+        name : CMN_SWITCH_MGT-DAVEY
+        evi_type : anycast
+        access_vlan : 1000
+        evi_vlan : none
+
+      - id : 223770
+        name : UNIFIED_NG-CMN_EVI
+        evi_type : anycast
+        access_vlan : 3770
+        evi_vlan : none
+
    - name : nsw
      evpn_instances:
+
       - id : 1000
+        name : CMN_SWITCH_MGT-KENT
+        evi_type : anycast
+        access_vlan : 1000
+        evi_vlan : none
+
+      - id : 1001
+        name : CMN_SWITCH_MGT-CHATSWOOD
+        evi_type: anycast 
+        access_vlan : 1000
+        evi_vlan : none
+
    - name : qld
      evpn_instances:
       - id : 1000
-   - name : nt
-     evpn_instances:
-      - id : 1000
+        name : CMN_SWITCH_MGT-CHARLOTTE
+        evi_type: anycast
+        access_vlan : 1000
+        evi_vlan : none
+
+      - id : 1001
+        name : CMN_SWITCH_MGT-WOOLONGABBA
+        evi_type: anycast
+        access_vlan : 1000
+        evi_vlan : none
+
 

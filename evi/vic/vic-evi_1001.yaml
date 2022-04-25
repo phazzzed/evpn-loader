@@ -1,8 +1,6 @@
 ---
 members:
   - hostname: cc23-r-363
-    lo0: 10.126.144.4
-    id: 1001
     name: 'CMN_SWITCH_MGT-EXHIBITION'
     type: anycast
     l3_interface: irb.1000
@@ -12,10 +10,8 @@ members:
       - name: ae8
       - name: ae9
     mpls_vlan: none
-    access_vlan: 1000
 
   - hostname: cc23-r-364
-    lo0: 10.126.144.5
     id: 1001
     name: 'CMN_SWITCH_MGT-EXHIBITION'
     type: anycast
@@ -25,5 +21,3 @@ members:
       - name: ae7
       - name: ae8
       - name: ae9
-    mpls_vlan: none
-    access_vlan: 1000 

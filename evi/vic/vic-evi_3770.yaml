@@ -1,50 +1,34 @@
 ---
 members:
   - hostname: cc23-r-361
-    lo0: 10.126.128.4
-    id: 3770 
     name: 'UNIFIED_NG-CMN_EVI'
     type: anycast
     l3_interface: irb.3770
     interfaces:
       - name: ae6
       - name: ae7
-    mpls_vlan: none
-    access_vlan: 3770 
 
   - hostname: cc23-r-362
-    lo0: 10.126.128.5
-    id: 3770 
     name: 'UNIFIED_NG-CMN_EVI'
     type: anycast
     l3_interface: irb.3770
     interfaces:
       - name: ae6
       - name: ae7
-    mpls_vlan: none
-    access_vlan: 3770 
 
   - hostname: cc23-r-363
-    lo0: 10.126.144.4
-    id: 3770 
     name: 'UNIFIED_NG-CMN_EVI'
     type: anycast
     l3_interface: irb.3770
     interfaces:
       - name: ae6
       - name: ae7
-    mpls_vlan: none
-    access_vlan: 3770
 
   - hostname: cc23-r-364
-    lo0: 10.126.144.5
-    id: 3770 
     name: 'UNIFIED_NG-CMN_EVI'
     type: anycast
     l3_interface: irb.3770
     interfaces:
       - name: ae6
       - name: ae7
-    mpls_vlan: none
-    access_vlan: 3770
 
